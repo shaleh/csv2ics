@@ -1,0 +1,15 @@
+Simple tool to convert csv into ics.
+
+The tool expects 4 fields in the csv:
+
+ * summary -- short blurb
+ * description -- longer text
+ * start -- start date
+ * end -- end date
+
+The date has 2 potential formats:
+
+ * %a %b %d %Y e.g. Mon Jan 18 2016
+ * %a %b %d %H:%M %Y e.g. Mon Jan 18 14:35 2016
+
+You can hack up `mk_time()` if you need other formats.
